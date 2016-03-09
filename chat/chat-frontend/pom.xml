@@ -79,7 +79,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <dependency>
             <groupId>com.ea.orbit</groupId>
             <artifactId>orbit-jetty</artifactId>
-            <version>${orbit.version}</version>
+            <version>${orbit.jetty.version}</version>
         </dependency>
         <dependency>
             <groupId>com.ea.orbit</groupId>

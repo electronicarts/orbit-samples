@@ -39,7 +39,9 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <version>0.8.0-SNAPSHOT</version>
 
     <properties>
-        <orbit.version>0.8.0-preview2</orbit.version>
+        <orbit.version>0.8.0-preview3</orbit.version>
+		<orbit.hk2.version>0.8.0-preview3</orbit.hk2.version>
+		<orbit.jetty.version>0.8.0-preview3</orbit.jetty.version>
         <project.target.jdk>1.8</project.target.jdk>
         <project.source.jdk>1.8</project.source.jdk>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

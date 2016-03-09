@@ -83,19 +83,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <dependency>
             <groupId>com.ea.orbit</groupId>
             <artifactId>orbit-hk2</artifactId>
-            <version>${orbit.version}</version>
+            <version>${orbit.hk2.version}</version>
         </dependency>
         <dependency>
             <groupId>com.ea.orbit</groupId>
             <artifactId>orbit-runtime</artifactId>
             <version>${orbit.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.ea.orbit</groupId>
-            <artifactId>orbit-mongodb</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-            <scope>runtime</scope>
-        </dependency>
+
     </dependencies>
 
 </project>
