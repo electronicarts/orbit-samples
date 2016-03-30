@@ -63,7 +63,7 @@ public class ChatActor extends AbstractActor<ChatActor.State> implements Chat
         state().observers.notifyObservers(o -> o.receiveMessage(message));
         if (System.currentTimeMillis() - lastSave > TimeUnit.SECONDS.toMillis(60))
         {
-            writeState().join();
+            return writeState();
         }
         return Task.done();
     }
