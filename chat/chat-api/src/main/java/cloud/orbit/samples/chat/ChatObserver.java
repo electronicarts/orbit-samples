@@ -26,12 +26,12 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-package com.ea.orbit.samples.chat;
+package cloud.orbit.samples.chat;
 
 
-import com.ea.orbit.actors.ActorObserver;
-import com.ea.orbit.actors.annotation.OneWay;
-import com.ea.orbit.concurrent.Task;
+import cloud.orbit.actors.ActorObserver;
+import cloud.orbit.actors.annotation.OneWay;
+import cloud.orbit.concurrent.Task;
 
 public interface ChatObserver extends ActorObserver
 {

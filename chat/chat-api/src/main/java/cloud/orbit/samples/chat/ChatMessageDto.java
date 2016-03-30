@@ -26,18 +26,46 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.ea.orbit.samples.chat;
+package cloud.orbit.samples.chat;
 
-import com.ea.orbit.container.Container;
+import java.io.Serializable;
+import java.util.Date;
 
-import java.util.concurrent.ExecutionException;
-
-public class ServerMain
+public class ChatMessageDto implements Serializable
 {
-    public static void main(String[] args) throws ExecutionException, InterruptedException
+	private static final long serialVersionUID = 1L;
+	private Date when;
+    private String sender;
+    private String message;
+
+    public Date getWhen()
     {
-        final Container container = new Container();
-        container.start().join();
+        // wasteful clone just to keep code analysers happy
+        return new Date(when.getTime());
+    }
+
+    public void setWhen(final Date when)
+    {
+        this.when = new Date(when.getTime());
+    }
+
+    public String getSender()
+    {
+        return sender;
+    }
+
+    public void setSender(final String sender)
+    {
+        this.sender = sender;
+    }
+
+    public String getMessage()
+    {
+        return message;
+    }
+
+    public void setMessage(final String message)
+    {
+        this.message = message;
     }
 }
-

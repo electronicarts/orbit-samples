@@ -28,20 +28,15 @@
 
 
 orbit.container.packages:
-  - com.ea.orbit.samples.chat
+  - cloud.orbit.samples.chat
 
 
-com.ea.orbit.actors.Stage:
-  !!com.ea.orbit.actors.Stage
+cloud.orbit.actors.Stage:
+  !!cloud.orbit.actors.Stage
   {
     clusterName: orbit-chat-sample,
     extensions:
     [
-      !!com.ea.orbit.actors.extensions.mongodb.MongoDBStorageExtension
-      {
-        host: localhost,
-        port: 27017,
-        database: chat
-      }
+      !!cloud.orbit.actors.extensions.json.InMemoryJSONStorageExtension {}
     ]
   }

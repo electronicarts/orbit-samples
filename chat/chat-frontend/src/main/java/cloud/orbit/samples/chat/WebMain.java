@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--~
+/*
 Copyright (C) 2015 Electronic Arts Inc.  All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -25,27 +24,21 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  -->
+*/
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>cloud.orbit.samples</groupId>
-        <artifactId>orbit-samples-chat-parent</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
-        <relativePath>..</relativePath>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+package cloud.orbit.samples.chat;
 
-    <name>Orbit Samples: Chat - API</name>
-    <artifactId>orbit-samples-chat-api</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>cloud.orbit</groupId>
-            <artifactId>orbit-core</artifactId>
-            <version>${orbit.version}</version>
-        </dependency>
-    </dependencies>
-</project>
+import cloud.orbit.container.Container;
+
+import java.util.concurrent.ExecutionException;
+
+public class WebMain
+{
+    public static void main(String[] args) throws ExecutionException, InterruptedException
+    {
+        final Container container = new Container();
+        container.start();
+    }
+}
+

@@ -26,11 +26,11 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-package com.ea.orbit.samples.chat;
+package cloud.orbit.samples.chat;
 
-import com.ea.orbit.actors.ObserverManager;
-import com.ea.orbit.actors.runtime.AbstractActor;
-import com.ea.orbit.concurrent.Task;
+import cloud.orbit.actors.ObserverManager;
+import cloud.orbit.actors.runtime.AbstractActor;
+import cloud.orbit.concurrent.Task;
 
 import java.util.ArrayList;
 import java.util.Date;

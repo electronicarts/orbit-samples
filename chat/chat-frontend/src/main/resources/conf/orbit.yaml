@@ -27,17 +27,17 @@
 #
 
 orbit.container.packages:
-  - com.ea.orbit.samples.chat
+  - cloud.orbit.samples.chat
 
 
-com.ea.orbit.web.EmbeddedJettyServer:
-  !!com.ea.orbit.web.EmbeddedJettyServer
+cloud.orbit.web.EmbeddedJettyServer:
+  !!cloud.orbit.web.EmbeddedJettyServer
   {
     port: 8080
   }
 
-com.ea.orbit.actors.Stage:
-  !!com.ea.orbit.actors.Stage
+cloud.orbit.actors.Stage:
+  !!cloud.orbit.actors.Stage
   {
     clusterName: orbit-chat-sample,
     mode: CLIENT
