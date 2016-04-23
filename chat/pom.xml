@@ -44,9 +44,9 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <artifactId>orbit-samples-chat-parent</artifactId>
 
     <properties>
-        <orbit.version>0.8.0</orbit.version>
-		<orbit.hk2.version>0.8.0</orbit.hk2.version>
-		<orbit.jetty.version>0.8.0</orbit.jetty.version>
+        <orbit.version>0.8.2</orbit.version>
+		<orbit.hk2.version>0.8.1</orbit.hk2.version>
+		<orbit.jetty.version>0.8.1</orbit.jetty.version>
     </properties>
 
     <modules>
