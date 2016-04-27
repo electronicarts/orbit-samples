@@ -11,5 +11,5 @@ Running
 ### Windows
 `start-cluster.bat`
 
-## Linux / OS X
+### Linux / OS X
 `start-cluster.sh`
