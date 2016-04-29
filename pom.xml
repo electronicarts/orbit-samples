@@ -41,6 +41,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<description>Orbit Samples</description>
     <url>https://github.com/orbit/orbit-samples/</url>
 	<packaging>pom</packaging>
+
+	<properties>
+		<orbit.version>0.8.2</orbit.version>
+	</properties>
 	
 	<modules>
 		<module>chat</module>
@@ -52,5 +56,17 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <connection>scm:git:git://github.com/orbit/orbit-samples.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/orbit/orbit-samples.git</developerConnection>
     </scm>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.4.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 	
 </project>
