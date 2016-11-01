@@ -36,14 +36,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	
 	<groupId>cloud.orbit.samples</groupId>
     <artifactId>orbit-samples-parent</artifactId>
-    <version>0.8.0-SNAPSHOT</version>
+    <version>0.9.10-SNAPSHOT</version>
     <name>Orbit Samples</name>
 	<description>Orbit Samples</description>
     <url>https://github.com/orbit/orbit-samples/</url>
 	<packaging>pom</packaging>
 
 	<properties>
-		<orbit.version>0.8.2</orbit.version>
+		<orbit.version>0.9.9</orbit.version>
 	</properties>
 	
 	<modules>

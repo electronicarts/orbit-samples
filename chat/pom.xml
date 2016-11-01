@@ -36,7 +36,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<parent>
 		<groupId>cloud.orbit.samples</groupId>
 		<artifactId>orbit-samples-parent</artifactId>
-		<version>0.8.0-SNAPSHOT</version>
+		<version>0.9.10-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -44,8 +44,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <artifactId>orbit-samples-chat-parent</artifactId>
 
     <properties>
-		<orbit.hk2.version>0.8.1</orbit.hk2.version>
-		<orbit.jetty.version>0.8.1</orbit.jetty.version>
+		<orbit.hk2.version>0.9.3</orbit.hk2.version>
+		<orbit.jetty.version>0.9.0</orbit.jetty.version>
     </properties>
 
     <modules>
