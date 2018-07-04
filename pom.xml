@@ -43,7 +43,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<packaging>pom</packaging>
 
 	<properties>
-		<orbit.version>0.9.9</orbit.version>
+		<orbit.version>1.10.0</orbit.version>
 	</properties>
 	
 	<modules>
