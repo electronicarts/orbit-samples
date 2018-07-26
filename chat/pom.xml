@@ -45,7 +45,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <properties>
 		<orbit.hk2.version>0.9.3</orbit.hk2.version>
-		<orbit.jetty.version>0.9.0</orbit.jetty.version>
+		<orbit.jetty.version>0.9.1</orbit.jetty.version>
     </properties>
 
     <modules>
