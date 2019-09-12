@@ -61,7 +61,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cloud.orbit.samples.helloconcurren.Main</mainClass>
+                    <mainClass>cloud.orbit.samples.helloconcurrency.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
