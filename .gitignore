@@ -4,3 +4,7 @@ target
 *.versionsBackup
 dependency-reduced-pom.xml
 tests.yml
+*.prefs
+*.project
+*.factorypath
+*.classpath
