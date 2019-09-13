@@ -37,6 +37,44 @@ import cloud.orbit.actors.Stage;
  */
 public class Main
 {
+	static public void processMessagesByOneActor() {
+        System.out.println("------------DEMO processing messages in sequence by one actor -----------------");
+        final int total = 10;
+        for( int i = 0; i < total; i++) {
+        	String message = "Welcome to orbit " + i;
+            System.out.println("Message to send: " + message);
+            
+        	// Each message is processed by the actor 0, therefore all the messages are sent in sequence and processed in sequence too. The order of processing is opposite to the order of sending. 
+        	Actor.getReference(Hello.class, "0").sayHello(message).join();
+        }		
+	}
+
+	static public void processMessagesByMultipleActor() {
+        System.out.println("------------DEMO processing messages in sequence by multiple actor intances -----------------");
+        final int total = 10;
+        for( int i = 0; i < total; i++) {
+        	String message = "Welcome to orbit " + i;
+            System.out.println("Message to send: " + message);
+            
+        	// Each message is processed by a new instance of the HelloActor but in the order of receiving  
+        	Actor.getReference(Hello.class, String.format("%d", i)).sayHello(message).join();
+        }
+	}
+	
+	static public void processMessagesConcurrently() {
+        System.out.println("------------DEMO processing messages concurrently by multiple actor instances-----------------");
+        // Send messages concurrently
+        // The messages are sent in sequence but it is processed by actors concurrently, so the responses are received without orders.   
+        final int total = 10;
+        for( int i = 0; i < total; i++) {
+        	String message = "Welcome to orbit " + i;
+            System.out.println("Message to send: " + message);
+            
+            // Each message is processed by a new instance of the HelloActor
+        	Actor.getReference(Hello.class, String.format("%d", i)).sayHello(message);
+        }
+		
+	}	
     public static void main(String[] args) throws Exception
     {
         // Create and bind to an orbit stage
@@ -44,20 +82,9 @@ public class Main
         stage.start().join();
         stage.bind();
 
-        // Send messages concurrently
-        // The messages are sent in sequence but it is processed by actors concurrently, so the responses are received without orders.   
-        final int total = 100;
-        for( int i = 0; i < total; i++) {
-        	String message = "Welcome to orbit " + i;
-            System.out.println("Message to send: " + message);
-            
-            // Each message is processed by a new instance of the HelloActor
-        	Actor.getReference(Hello.class, String.format("%d", i)).sayHello(message);
-        	// Each message is processed by the actor 0, therefore all the messages are sent in sequence and processed in sequence too. The order of processing is opposite to the order of sending. 
-        	//Actor.getReference(Hello.class, "0").sayHello(message);
-        	// Each message is processed by a new instance of the HelloActor but in the order of receiving  
-        	//Actor.getReference(Hello.class, String.format("%d", i)).sayHello(message).join();
-        }
+        processMessagesByOneActor();
+        processMessagesByMultipleActor();
+        processMessagesConcurrently();
         
         // Shut down the stage
         stage.stop().join();
